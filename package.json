@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/amit-punjabi/sample.git"
   },
-  "devDependencies": {
-    "selenium-webdriver": "^3.0.1"
+  "dependencies": {
+    "selenium-webdriver": "3.6.0"
   },
   "keywords": [
     "node"
