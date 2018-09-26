@@ -1,0 +1,130 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tourism</title>
+<style>
+.abc {
+    background-color: lightgrey;
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+/* Style the content */
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+</style> 
+<script>
+function myFunction() {
+    var txt;
+    var person = prompt("Please enter your name:");
+    if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+    } else {
+        txt = "Hello " + person;
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</head>
+
+<body>
+
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">London</a></li>
+      <li><a href="amit1.html">Paris</a></li>
+      <li><a href="amit2.html">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Paris</h1>
+    <p>Paris is the capital and most populous city of France, with an area of 105 square kilometres (41 square miles) and a population of 2,206,488.</p>
+    <p>Since the 17th century, Paris has been one of Europe's major centres of finance, commerce, fashion, science, music, and painting</p>
+
+<div class="abc">
+<button onclick="myFunction()">Try it</button>
+<h2 id="demo"></h2>
+</div>
+
+
+  </article>
+</section>
+
+<footer>
+  <p>Connect with us...</p>
+</footer>
+
+</body>
+</html>
