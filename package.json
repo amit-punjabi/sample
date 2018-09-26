@@ -1,0 +1,22 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "node_modules",
+  "main": "jenkinstest.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amit-punjabi/sample.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "amit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amit-punjabi/sample/issues"
+  },
+  "homepage": "https://github.com/amit-punjabi/sample#readme"
+}
