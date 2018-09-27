@@ -5,7 +5,7 @@ var capabilities = { 'browserName': 'chrome' }
 var driver = new webdriver.Builder().usingServer('http://localhost:4444/wd/hub').withCapabilities(capabilities).build();
 
 //Opens http://demo.guru99.com/popup.php
-driver.get("http://5c5846c3.ngrok.io");
+driver.get("http://61da9e42.ngrok.io/");
 
 driver.findElement(By.xpath('/html/body/p')).getText().then(function(element){
     if(assert.equal("Hello World",element,"FAIL")==undefined){
